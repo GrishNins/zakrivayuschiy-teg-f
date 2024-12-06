@@ -7,7 +7,7 @@
     --font-weight-subtitle: 400;
     --bg-gradient: repeating-linear-gradient(
         90deg,
-        #E7E7E7 0 2px,
+        #d3d3d3 0 2px,
         rgba(0, 0, 0, 0) 2px 4px),
     repeating-linear-gradient(180deg, #d3d3d3 0 2px, rgba(0, 0, 0, 0) 2px 4px),
     repeating-linear-gradient(#e7e7e7 0%, #1a1a1a 100%);
