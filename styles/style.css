@@ -108,8 +108,17 @@
   display: block;
   top: 25px;
   right: 25px;
-  text-shadow: 1px 1px 1px #fff;
+  text-shadow: 1px var(--font-accent-color, #fff);
+  -webkit-text-stroke: 1px var(--font-accent-color, #fff);
 }
+
+@supports((text-stroke: 1px var(--font-accent-color, #fff)) or (-webkit-text-stroke: 1px var(--font-accent-color, #fff))) {
+  .label {
+      -webkit-text-stroke: 1px var(--font-accent-color, #fff);
+      text-stroke: 1px var(--font-accent-color, #fff);
+      text-shadow: none;
+  }
+} 
 
 .grayscale {
   filter: grayscale(0.7);

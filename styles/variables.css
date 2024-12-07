@@ -3,6 +3,7 @@
     --font-main: 'Inter';
     --font-accent: 'Press Start 2P';
     --font-color: #000;
+    --font-accent-color: #fff;
     --font-weight-title: 700;
     --font-weight-subtitle: 400;
     --bg-gradient: repeating-linear-gradient(
