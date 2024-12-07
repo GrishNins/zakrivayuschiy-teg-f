@@ -97,6 +97,20 @@
   padding: 0 25px 25px 0;
 }
 
+.label {
+  position: absolute;
+  z-index: 1;
+  font-family: var(--font-accent, fantazy);
+  font-size: 14px;
+  filter: opacity(50%);
+  color: #000;
+  mix-blend-mode: hard-light;
+  display: block;
+  top: 25px;
+  right: 25px;
+  text-shadow: 1px 1px 1px #fff;
+}
+
 .grayscale {
   filter: grayscale(0.7);
 }
@@ -118,7 +132,7 @@
 }
 
 .sepia {
-filter: sepia(80%);
+filter: sepia(80%) contrast(20%);
 }
 
 .brightness {
