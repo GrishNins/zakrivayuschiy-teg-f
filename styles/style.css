@@ -167,12 +167,13 @@ filter: sepia(80%) contrast(20%);
 .button__text {
   font-family: var(--font-accent, fantazy);
   font-size: 14px;
+  line-height: 12.6px;
 }
 
 .footer {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  max-inline-size: 335px;
 }
 
 .button {
@@ -187,9 +188,19 @@ filter: sepia(80%) contrast(20%);
   transition: box-shadow 0.3s ease-in-out;
 }
 
+.save-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 16px 21px;
+  margin: 52px;
+}
+
 .save-button__icon {
   width: 21px;
-  mix-blend-mode: color;
+  
 }
 
 .dialog {
@@ -213,4 +224,9 @@ filter: sepia(80%) contrast(20%);
   font-size: 14px;
   text-transform: uppercase;
   line-height: 21px;
+}
+
+.dialog__button {
+  inline-size: 100%;
+  padding: 12px 0;
 }
