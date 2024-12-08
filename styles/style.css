@@ -200,10 +200,12 @@ filter: sepia(80%) contrast(20%);
 
 .save-button__icon {
   width: 21px;
-  
 }
 
 .dialog {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
   max-inline-size: 355px;
   padding: 25px 30px;
   border: 2px solid #000;
