@@ -178,11 +178,39 @@ filter: sepia(80%) contrast(20%);
 .button {
   border: 1px solid #000;
   background-color: #fff;
-  margin-top: 50px;
   position: relative;
   cursor: pointer;
   font-size: 14px;
+  position: relative;
   text-align: center;
   text-transform: inherit;
   transition: box-shadow 0.3s ease-in-out;
+}
+
+.save-button__icon {
+  width: 21px;
+  mix-blend-mode: color;
+}
+
+.dialog {
+  max-inline-size: 355px;
+  padding: 25px 30px;
+  border: 2px solid #000;
+}
+
+.dialog-floppy {
+  width: 39px;
+}
+
+.dialog__content {
+  display: flex;
+  justify-items: center;
+  gap: 20px;
+}
+
+.dialog__text {
+  font-family: var(--font-accent, fantazy);
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 21px;
 }
