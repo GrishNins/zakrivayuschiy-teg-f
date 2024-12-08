@@ -14,5 +14,7 @@
     repeating-linear-gradient(#e7e7e7 0%, #1a1a1a 100%);
     --bg-color-light: #fff;
     --bg-color-dark: #000;
+    --text-color-light: #fff;
+    --text-color-dark: #000;
    
 }

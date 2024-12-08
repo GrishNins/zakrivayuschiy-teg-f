@@ -219,6 +219,10 @@ filter: sepia(80%) contrast(20%);
   border: 2px solid #000;
 }
 
+dialog::backdrop {
+  background-color: rgb(0 0 0 / 0.8);
+} 
+
 .dialog-floppy {
   width: 80px;
 }
