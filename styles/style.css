@@ -18,10 +18,11 @@
   font-size: 18px;
   color: #000;
   background-size: cover;
-  margin: 0 370px;
+  margin: 0 167px;
   background-image: var(--bg-gradient);
   background-color: var(--bg-color, #fff);
   background-attachment: fixed;
+  margin-block-start: 100px;
 }
 
 .header {
@@ -31,10 +32,14 @@
   max-inline-size: 700px;
   font-family: var(--font-accent, fantazy);
   padding: 127px 0;
-  margin: 100px 0;
+  margin-inline: auto;
   border: 2px solid #000;
   gap: 20px;
   background-color: #fff;
+}
+
+.header_type {
+  margin-block-end: 100px;
 }
 
 .header_title {
@@ -51,6 +56,8 @@
 .card {
   display: grid;
   gap: 50px;
+  max-inline-size: 696px;
+  margin-inline: auto;
 }
 
 .section {
@@ -196,6 +203,7 @@ filter: sepia(80%) contrast(20%);
   gap: 8px;
   padding: 16px 21px;
   margin: 52px;
+  border: 2px solid #000;
 }
 
 .save-button__icon {
@@ -212,7 +220,7 @@ filter: sepia(80%) contrast(20%);
 }
 
 .dialog-floppy {
-  width: 39px;
+  width: 80px;
 }
 
 .dialog__content {
@@ -231,4 +239,7 @@ filter: sepia(80%) contrast(20%);
 .dialog__button {
   inline-size: 100%;
   padding: 12px 0;
+  background-color: #fff;
+  border: 2px solid #000;
+  text-transform: uppercase;
 }

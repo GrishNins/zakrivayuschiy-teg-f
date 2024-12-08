@@ -12,4 +12,7 @@
         rgba(0, 0, 0, 0) 2px 4px),
     repeating-linear-gradient(180deg, #d3d3d3 0 2px, rgba(0, 0, 0, 0) 2px 4px),
     repeating-linear-gradient(#e7e7e7 0%, #1a1a1a 100%);
+    --bg-color-light: #fff;
+    --bg-color-dark: #000;
+   
 }
