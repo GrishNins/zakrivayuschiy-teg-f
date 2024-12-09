@@ -86,7 +86,7 @@
 }
 .section_title {
   font-size: 18px;
-  padding: 5px 10px;
+  padding: 4px 10px;
   font-variation-settings: "wght" var(--font-weight-title, 700);
 }
 
@@ -120,8 +120,8 @@
 
 @media (width <=375px) {
   .label {
-    right: 13px;
-    top: 20px;
+    right: 11px;
+    top: 23px;
   }
 }
 
@@ -240,7 +240,7 @@ filter: sepia(80%) contrast(20%);
   .save-button {
     flex-direction: column;
     margin: 52px 34px;
-    padding: 15px 20.5px 15px 19.5px;
+    padding: 15px 18px;
   }
 }
 
