@@ -18,11 +18,17 @@
   font-size: 18px;
   color: #000;
   background-size: cover;
-  margin: 0 167px;
+  margin: 0 168px;
   background-image: var(--bg-gradient);
   background-color: var(--bg-color, #fff);
   background-attachment: fixed;
   margin-block-start: 100px;
+}
+
+@media (width <=375px) {
+  .page {
+    margin: 100px 0;
+  }
 }
 
 .header {
@@ -36,6 +42,12 @@
   border: 2px solid #000;
   gap: 20px;
   background-color: #fff;
+}
+
+@media (width <= 375px) {
+  .header {
+    padding: 120px 0;;
+  }
 }
 
 .header_type {
@@ -67,6 +79,17 @@
   background-color: #fff;
 }
 
+@media (width <=375px) {
+  .section {
+    gap: 0;
+  }
+}
+.section_title {
+  font-size: 18px;
+  padding: 5px 10px;
+  font-variation-settings: "wght" var(--font-weight-title, 700);
+}
+
 .card_img {
   border-block-start: 2px solid #000;
   border-block-end: 2px solid #000;
@@ -74,34 +97,10 @@
   block-size: 696px;
 }
 
-.section_title {
-  font-size: 18px;
-  padding: 5px 10px;
-  font-variation-settings: "wght" var(--font-weight-title, 700);
-}
-
-.card_text {
-  display: flex;
-  flex-direction: column;
-  gap: 27px;
-  font-size: 18px;
-  margin: 25px;
-  line-height: 21px;
-}
-
-.card_type {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-
-.card_button {
-  display: flex;
-  justify-content: end;
-  align-items: center;
-  gap: 5px;
-  padding: 0 25px 25px 0;
+@media (width <=375px) {
+  .card_img {
+    block-size: 375px;
+  }
 }
 
 .label {
@@ -119,6 +118,13 @@
   -webkit-text-stroke: 1px var(--font-accent-color, #fff);
 }
 
+@media (width <=375px) {
+  .label {
+    right: 13px;
+    top: 20px;
+  }
+}
+
 @supports((text-stroke: 1px var(--font-accent-color, #fff)) or (-webkit-text-stroke: 1px var(--font-accent-color, #fff))) {
   .label {
       -webkit-text-stroke: 1px var(--font-accent-color, #fff);
@@ -126,6 +132,30 @@
       text-shadow: none;
   }
 } 
+
+.card_type {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.card_text {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+  font-size: 18px;
+  margin: 25px;
+  line-height: 21px;
+}
+
+.card_button {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 5px;
+  padding: 0 25px 25px 0;
+}
 
 .grayscale {
   filter: grayscale(0.7);
@@ -201,22 +231,39 @@ filter: sepia(80%) contrast(20%);
   justify-content: center;
   align-items: center;
   gap: 8px;
-  padding: 16px 21px;
+  padding: 15px 21px;
   margin: 52px;
   border: 2px solid #000;
+}
+
+@media (width <=375px) {
+  .save-button {
+    flex-direction: column;
+    margin: 52px 34px;
+    padding: 15px 20.5px 15px 19.5px;
+  }
 }
 
 .save-button__icon {
   width: 21px;
 }
 
+@media (width <=375px) {
+  .save-button__icon {
+    width: 28px;
+  }
+}
+
 .dialog {
-  display: flex;
   flex-direction: column;
   gap: 30px;
   max-inline-size: 355px;
   padding: 25px 30px;
   border: 2px solid #000;
+}
+
+.dialog [open] {
+  display: flex;
 }
 
 dialog::backdrop {
