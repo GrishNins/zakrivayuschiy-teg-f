@@ -255,8 +255,6 @@ filter: sepia(80%) contrast(20%);
 }
 
 .dialog {
-  flex-direction: column;
-  gap: 30px;
   max-inline-size: 355px;
   padding: 25px 30px;
   border: 2px solid #000;
@@ -293,4 +291,5 @@ dialog::backdrop {
   background-color: #fff;
   border: 2px solid #000;
   text-transform: uppercase;
+  margin-block-start: 30px;
 }
