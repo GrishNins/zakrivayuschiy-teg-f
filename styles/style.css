@@ -185,7 +185,7 @@ filter: sepia(80%) contrast(20%);
   filter: brightness(40%)
 }
 
-.button_heart {
+.card__icon-button {
   max-block-size: 38px;
   background-color: transparent;
   border: none;
@@ -201,27 +201,54 @@ filter: sepia(80%) contrast(20%);
   background-color: #fff;
 }
 
-.button__text {
-  font-family: var(--font-accent, fantazy);
-  font-size: 14px;
-  line-height: 12.6px;
-}
-
-.footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .button {
-  border: 1px solid #000;
+  border: 2px solid #000;
   background-color: #fff;
   position: relative;
   cursor: pointer;
   font-size: 14px;
   text-align: center;
   text-transform: inherit;
-  transition: box-shadow 0.3s ease-in-out;
+  transition: box-shadow 0.5s ease-in-out;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:focus-visible {
+  border: 2px solid #000;
+  transition: border 0.5s ease-in-out;
+  box-shadow: 2px 2px 0 #000;
+}
+
+.button:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #000;
+  transform: scaleX(0);
+  transition: transform 0.5s ease-in-out;
+  transform-origin: left;
+}
+
+.button:hover:after {
+  transform: scaleX(1);
+}
+
+.button__text {
+  font-family: var(--font-accent, fantazy);
+  font-size: 14px;
+  line-height: 12.6px;
+  z-index: 10;
+  position:relative;
+  mix-blend-mode: difference;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .save-button {
