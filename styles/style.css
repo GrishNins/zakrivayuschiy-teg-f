@@ -167,7 +167,7 @@
 }
 
 .blur {
-  filter: blur(12px);
+  filter: blur(6px);
 }
 
 .invert {
@@ -244,10 +244,6 @@ filter: sepia(80%) contrast(20%);
 
 .button:hover:after {
   transform: scaleX(1);
-}
-
-.sparks {
-  opacity: 0;
 }
 
 .button__text {

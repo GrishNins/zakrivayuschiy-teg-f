@@ -14,5 +14,6 @@
     --text-color-dark: #000;
     --heart-red-color: #FF0000;
     --contour-heart-color: #000;
+    --countour-heart_accent-color: #ff0000;
     --main-body-heart-color: #FF0000;
-}
+    --main-body-heart_accent-color: #000;
