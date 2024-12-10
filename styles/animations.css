@@ -10,18 +10,17 @@
 
 */
 @keyframes heart {
-  0% {
-    scale: 1;
-    transform-origin: center;
+  from {
+      transform: scale(1);
   }
-  100% {
-    scale: 1.5;
-    transform-origin: center;
+  
+  to {
+      transform: scale(1.5);
   }
 }
 
 .like-icon.is-liked .heart {
-  animation: scale 0.3s ease-in alternate 0.1s;
+  animation: heart 0.3s ease-in 0.1s 1 alternate;
 }
 
 @keyframes sparks {
@@ -35,7 +34,7 @@
 
 .like-icon.is-liked .sparks {
   transform-origin: center;
-  animation: sparks 0.3s ease-in 0.3s;
+  animation: sparks 0.3s ease-in 0.3s 1 alternate;
 }
 
 .sparks {
@@ -54,6 +53,20 @@
   fill: transparent;
 }
 
+.like-icon .heart {
+  transform-origin: center;
+}
+
+.like-icon .contour {
+  fill: var(--contour-heart-color, #000);
+  transition: fill 0.1s linear;
+}
+
+/*.contour {
+  fill: var(--countour-heart_accent-color, #ff0000);
+  transition: fill 0.1s linear;
+}
+*/
 .like-icon:hover .core {
   fill: var(--contour-heart-color, #000);
   transition: fill 0.3s linear 0.03s;
