@@ -32,7 +32,7 @@
   }
 }
 
-.like-icon .is-liked .sparks {
+.like-icon.is-liked .sparks {
   transform-origin: center;
   animation: sparks 0.3s ease-in 0.3s 1 alternate;
 }
