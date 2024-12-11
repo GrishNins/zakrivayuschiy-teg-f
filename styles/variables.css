@@ -8,13 +8,10 @@
     --font-weight-subtitle: 400;
     --bg-gradient: repeating-linear-gradient(to right, #d3d3d3 0 2px, transparent 2px 4px), 
     repeating-linear-gradient(to bottom, #d3d3d3 0 2px, transparent 2px 4px), linear-gradient(#e7e7e7, #1a1a1a);
-    --bg-color-light: #fff;
-    --bg-color-dark: #000;
-    --text-color-light: #fff;
-    --text-color-dark: #000;
-    --heart-red-color: #FF0000;
-    --contour-heart-color: #000;
-    --countour-heart_accent-color: #ff0000;
-    --main-body-heart-color: #FF0000;
-    --main-body-heart_accent-color: #000;
+    --bg-color: #fff;
+    --bg-accent-color: #000;
+    --contour-color: #000;
+    --contour-like-color: #ff0000;
+    --heart-color: #000;
+    --heart-like-color: #ff0000;
 }

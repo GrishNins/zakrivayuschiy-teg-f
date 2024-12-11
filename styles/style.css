@@ -16,7 +16,7 @@
   font-family: var(--font-main, sans-serif);
   font-variation-settings: 'wght' var(--font-weight-subtitle, 400);
   font-size: 18px;
-  color: #000;
+  color: var(--font-color, #000);
   background-size: cover;
   margin: 0 168px;
   background-image: var(--bg-gradient);
@@ -41,7 +41,7 @@
   margin-inline: auto;
   border: 2px solid #000;
   gap: 20px;
-  background-color: #fff;
+  background-color: var(--bg-color, #fff);
 }
 
 @media (width <= 375px) {
@@ -76,7 +76,7 @@
   display: grid;
   gap: 1px;
   border: 2px solid #000;
-  background-color: #fff;
+  background-color: var(--bg-color, #fff);
 }
 
 @media (width <=375px) {
@@ -109,7 +109,7 @@
   font-family: var(--font-accent, fantazy);
   font-size: 14px;
   filter: opacity(50%);
-  color: #000;
+  color: var(--font-color, #000);
   mix-blend-mode: hard-light;
   display: block;
   top: 25px;
@@ -189,7 +189,7 @@ filter: sepia(80%) contrast(20%);
 .card__icon-button {
   max-block-size: 38px;
   background-color: transparent;
-  border: none;
+  border: 2px solid transparent;
   position: relative;
   padding: 0;
   cursor: pointer;
@@ -208,12 +208,12 @@ filter: sepia(80%) contrast(20%);
   width: 130px;
   height: 38px;
   border: 2px solid #000;
-  background-color: #fff;
+  background-color: var(--bg-color, #fff);
 }
 
 .button {
   border: 2px solid #000;
-  background-color: #fff;
+  background-color: var(--bg-color, #fff);
   position: relative;
   cursor: pointer;
   font-size: 14px;
@@ -236,7 +236,7 @@ filter: sepia(80%) contrast(20%);
   content: "";
   position: absolute;
   inset: 0;
-  background-color: #000;
+  background-color: var(--bg-accent-color, #000);
   transform: scaleX(0);
   transition: transform 0.5s ease-in-out;
   transform-origin: left;
@@ -253,7 +253,7 @@ filter: sepia(80%) contrast(20%);
   z-index: 10;
   position:relative;
   mix-blend-mode: difference;
-  color: #fff;
+  color: var(--font-accent-color, #fff);
 }
 
 .footer {
@@ -329,7 +329,7 @@ dialog::backdrop {
 .dialog__button {
   inline-size: 100%;
   padding: 12px 0;
-  background-color: #fff;
+  background-color: var(--bg-color, #fff);
   border: 2px solid #000;
   text-transform: uppercase;
   margin-block-start: 30px;
