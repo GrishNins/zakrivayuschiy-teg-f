@@ -66,7 +66,7 @@
 
 .like-icon:hover .core {
   fill: var(--heart-color, #000);
-  transition: fill 0.3s linear 0.03s;
+  transition: fill 0.3s linear;
 }
 
 .like-icon:hover .main-body {
@@ -76,7 +76,7 @@
 
 .like-icon:active .core {
   fill: var(--heart-like-color, #ff0000);
-  transition: fill 0.3s linear 0.03s;
+  transition: fill 0.3s linear;
 }
 
 .like-icon:active .main-body {
@@ -86,7 +86,7 @@
 
 .like-icon.is-liked .core {
   fill: var(--heart-like-color, #ff0000);
-  transition: fill 0.3s linear 0.03s;
+  transition: fill 0.3s linear;
 }
 
 .like-icon.is-liked .main-body {

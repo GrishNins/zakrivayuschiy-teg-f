@@ -115,7 +115,6 @@
   top: 25px;
   right: 25px;
   text-shadow: 1px var(--font-accent-color, #fff);
-  -webkit-text-stroke: 1px var(--font-accent-color, #fff);
 }
 
 @media (width <=375px) {
@@ -193,6 +192,7 @@ filter: sepia(80%) contrast(20%);
   position: relative;
   padding: 0;
   cursor: pointer;
+  transition: 0.3s ease;
 }
 
 .card__icon-button:focus {
@@ -201,7 +201,6 @@ filter: sepia(80%) contrast(20%);
 
 .card__icon-button:focus-visible {
   border: 2px solid #000;
-  transition: 0.3s ease;
 }
 
 .card__like-button {
@@ -228,7 +227,6 @@ filter: sepia(80%) contrast(20%);
 
 .button:focus-visible {
   border: 2px solid #000;
-  transition: border 0.5s ease-in-out;
   box-shadow: 2px 2px 0 #000;
 }
 
@@ -256,7 +254,7 @@ filter: sepia(80%) contrast(20%);
   color: var(--font-accent-color, #fff);
 }
 
-.footer {
+.button_footer {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -270,7 +268,6 @@ filter: sepia(80%) contrast(20%);
   gap: 8px;
   padding: 15px 21px;
   margin: 52px;
-  border: 2px solid #000;
 }
 
 @media (width <=375px) {
@@ -306,7 +303,8 @@ filter: sepia(80%) contrast(20%);
 }
 
 dialog::backdrop {
-  background-color: rgb(0 0 0 / 0.8);
+  background-color: #000;
+  opacity: 75%;
 } 
 
 .dialog-floppy {
