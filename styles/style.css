@@ -94,7 +94,7 @@
   border-block-start: 2px solid #000;
   border-block-end: 2px solid #000;
   position: relative;
-  block-size: 696px;
+  aspect-ratio: 1/1;
 }
 
 @media (width <=375px) {
@@ -267,12 +267,14 @@ filter: sepia(80%) contrast(20%);
   align-items: center;
   gap: 8px;
   padding: 15px 21px;
+  margin-block-end: 103px;
 }
 
 @media (width <=375px) {
   .save-button {
     flex-direction: column;
     padding: 15px 20px;
+    margin-block-end: 100px;
   }
 }
 
