@@ -95,6 +95,8 @@
   border-block-end: 2px solid #000;
   position: relative;
   aspect-ratio: 1/1;
+  margin-inline: auto;
+  block-size: 696px;
 }
 
 @media (width <=375px) {
