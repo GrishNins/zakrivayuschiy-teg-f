@@ -18,17 +18,10 @@
   font-size: 18px;
   color: var(--font-color, #000);
   background-size: cover;
-  margin: 0 168px;
   background-image: var(--bg-gradient);
   background-color: var(--bg-color, #fff);
   background-attachment: fixed;
   margin-block-start: 100px;
-}
-
-@media (width <=375px) {
-  .page {
-    margin: 100px 0;
-  }
 }
 
 .header {
@@ -96,13 +89,8 @@
   position: relative;
   aspect-ratio: 1/1;
   margin-inline: auto;
-  block-size: 696px;
-}
-
-@media (width <=375px) {
-  .card_img {
-    block-size: 375px;
-  }
+  block-size: 100%;
+  inline-size: 100%;
 }
 
 .label {
